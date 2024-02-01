@@ -3,6 +3,8 @@ body{
     margin:0;
 }
 
+/* Section one */
+
 a{
     text-decoration: none;
     color: #F9FAF8;
@@ -39,14 +41,17 @@ ul{
 
 .hero-container{
     display:flex;
-    justify-content: center;
-    gap: 50px;
+    justify-content: space-evenly;
+    padding:10px;
     padding-bottom: 80px;
 }
 
 .hero-section{
+    display: flex;
+    flex-direction: column;
     color: #F9FAF8;
     width: 400px;
+    gap:10px;
 }
 
 .hero-text{
@@ -55,6 +60,9 @@ ul{
 }
 
 .img-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: #F9FAF8;
     width:450px;
     background-color:gray;
@@ -66,5 +74,45 @@ ul{
         padding: 4px 17px;
         border-radius: 5px;
         border: 0;    
-        font-weight: bold;
+        font-weight: 600;
+}
+
+/* Section Two */
+
+.section-two{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+    margin: 25px;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    font-size: 36px;
+    font-weight:800;
+    color: #1F2937;
+}
+
+.card-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 150px;
+}
+
+.box{
+    height: 140px;
+    width: 140px;
+    border: solid #3882F6;
+    border-radius: 10%;
 }
